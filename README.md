@@ -44,7 +44,7 @@ riscv-cpu-repro.rar
     ├── build/              复现脚本（scripts/）、报告（reports/）、位流（bitstream/）
     ├── board/              上位机（host/）、约束（constraints/）、演示位流（bitstream/）
     ├── data/               内存镜像（mem/）
-    ├── skill/              可复现验证技能包（SKILL.md + references/）
+    ├── skill/              可复现验证技能包（SKILL.md / README.md + references/）
     └── report/             验证报告与 AI 协作记录
 ```
 
@@ -84,7 +84,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build\scripts\repro\repro.
 
 ## 技能包
 
-`skill/` 目录把整套复现流程封装成 agent 可直接调用的技能（`skill/SKILL.md` + 9 篇 reference）：何时跑哪一步、期望输出、哪些失败是仓库自带而非环境问题。安装方式见 `skill/README.md`。
+`skill/` 目录把整套复现流程封装成 agent 可直接调用的技能（`skill/SKILL.md` + 9 篇 reference）：何时跑哪一步、期望输出、哪些失败是仓库自带而非环境问题。安装方式与逐项速查（适用场景 / 使用方法 / 已验证效果 / 来源 / 失效条件）见 `skill/README.md`。
 
 ## 许可证与第三方声明
 
@@ -92,3 +92,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build\scripts\repro\repro.
 - `src/software/apps/coremark/vendor/` 内 CoreMark 源码**原样引用、未作修改**；CoreMark® 是 EEMBC® 注册商标，使用受 EEMBC Acceptable Use Agreement 约束，不得在修改版本上使用该商标。
 - MNIST 为 Yann LeCun 等维护的手写数字数据集；Vivado、Artix-7 等为 AMD/Xilinx 商标。
 - 完整第三方声明见压缩包内 `notice.md`。
+
